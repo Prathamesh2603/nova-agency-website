@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import { services } from "../data/services";
 
 const Services = () => {
@@ -73,6 +73,21 @@ const Services = () => {
               </article>
             ))
           }
+        </div>
+
+        {/* Button note */}
+        <div className="mt-8 flex items-center justify-between">
+          <p className="text-xs uppercase tracking-widest text-neutral-500">
+            Strategy · Design · Development
+          </p>
+
+          <a 
+            href="#contact"
+            className="flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-60"
+          >
+            Discuss your project
+            <ArrowDownRight size={17} />
+          </a>
         </div>
 
       </div>
