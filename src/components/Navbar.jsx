@@ -3,7 +3,7 @@ import { ArrowUpRight } from 'lucide-react'
 const Navbar = () => {
   return (
     <header className='fixed left-0 top-0 z-50 w-full'>
-      <nav className='mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-10'>
+      <nav className='mx-auto flex items-center justify-between px-6 py-6 lg:px-10'>
 
         {/* Logo */}
         <a 
