@@ -1,3 +1,6 @@
+import { ArrowUpRight } from "lucide-react"
+import { projects } from "../data/projects"
+
 const Projects = () => {
   return (
     <section
@@ -22,6 +25,34 @@ const Projects = () => {
             A selection of projects where strategy, creativity,
             and technology come together.
           </p>
+        </div>
+
+        {/* Project grid */}
+        <div className="grid grid-cols-1 gap-x-6 gap-y-12 md:grid-cols-2 md:gap-y-16">
+          {
+            projects.map(project => (
+              <article
+                key={project.id}
+                className="group"
+              >
+
+                {/* Image */}
+                <div className={`relative aspect-4/3 overflow-hidden ${project.theme}`}>
+                  <img 
+                    src={project.image} 
+                    alt={`${project.name} project perview`}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]" 
+                  />
+
+                  <div className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full bg-white text-neutral-900 transition-transform duration-300 group-hover:rotate-45">
+                    <ArrowUpRight size={20} />
+                  </div>
+                </div>
+
+              </article>
+            ))
+          }
         </div>
 
       </div>
