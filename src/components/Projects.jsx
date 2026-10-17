@@ -50,6 +50,27 @@ const Projects = () => {
                   </div>
                 </div>
 
+                {/* Details */}
+                <div className="mt-5 flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-heading text-2xl font-medium tracking-tight sm:3xl">
+                      {project.name}
+                    </h3>
+
+                    <p className="mt-1 text-sm text-neutral-500">
+                      {project.category}
+                    </p>
+
+                    <p className="mt-3 max-w-sm text-sm leading-6 text-neutral-600">
+                      {project.description}
+                    </p>
+                  </div>
+
+                  <span className="pt-2 text-xs text-neutral-400">
+                    {project.year}
+                  </span>
+                </div>
+
               </article>
             ))
           }
