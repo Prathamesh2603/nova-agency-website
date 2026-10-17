@@ -76,6 +76,21 @@ const Projects = () => {
           }
         </div>
 
+        {/* Bottom link */}
+        <div className="mt-16 border-t border-neutral-300 pt-6">
+          <a 
+            href="#contact"
+            className="group inline-flex items-center gap-3 text-sm font-medium"
+          >
+            Have a project in mind?
+
+            <ArrowUpRight 
+              size={18}
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+            />
+          </a>
+        </div>
+
       </div>
     </section>
   )
