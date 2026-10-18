@@ -48,6 +48,20 @@ const AboutUs = () => {
 
         </div>
 
+        {/* Visual divider */}
+        <div className="my-16 overflow-hidden border-y border-neutral-300 py-7 sm:my-24 sm:py-10">
+          <div className="flex flex-wrap items-center justify-between gap-5">
+            <span className="font-heading text-2xl font-medium tracking-tight sm:text-4xl">
+              Strategy.
+            </span>
+
+            <span className="text-neutral-400">✳</span>
+
+            <span className="font-heading text-2xl font-medium tracking-tight sm:text-4xl">
+              Technology.
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   )
