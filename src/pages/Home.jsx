@@ -1,3 +1,4 @@
+import AboutUs from "../components/AboutUs"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Projects from "../components/Projects"
@@ -10,6 +11,7 @@ const Home = () => {
       <Hero />
       <Services />
       <Projects />
+      <AboutUs />
     </main>
   )
 }
