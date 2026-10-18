@@ -1,4 +1,5 @@
 import { ArrowUpRight } from "lucide-react"
+import { aboutUs } from "../data/aboutUs"
 
 const AboutUs = () => {
   return (
@@ -62,6 +63,48 @@ const AboutUs = () => {
             </span>
           </div>
         </div>
+
+        {/* Values */}
+        <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="mb-3 text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+              What guides us
+            </p>
+
+            <h3 className="font-heading font-medium text-3xl tracking-tight sm:text-4xl">
+              The way we work
+            </h3>
+          </div>
+
+          <p className="max-w-sm text-sm leading-6 text-neutral-500">
+            Good work comes from clear thinking, open collaboration,
+            and an obsession with the details.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 border-t border-neutral-300 sm:grid-cols-2">
+          {
+            aboutUs.map(value => (
+              <article
+                key={value.number}
+                className="border-b border-neutral-300 py-7 sm:px-6 sm:py-9 first:sm:pl-0 sm:odd:border-r sm:odd:pr-8 sm:even:pl-8"
+              >
+                <span className="text-xs text-neutral-400">
+                  {value.number}
+                </span>
+
+                <h4 className="mt-5 font-heading text-xl font-medium tracking-tight sm:text-2xl">
+                  {value.title}
+                </h4>
+
+                <p className="mt-3 max-w-md text-sm leading-6 text-neutral-500">
+                  {value.description}
+                </p>
+              </article>
+            ))
+          }
+        </div>
+
       </div>
     </section>
   )

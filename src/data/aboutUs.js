@@ -1,4 +1,4 @@
-const aboutUs = [
+export const aboutUs = [
   {
     number: "01",
     title: "Thoughtful by design",
