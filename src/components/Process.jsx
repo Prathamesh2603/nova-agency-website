@@ -1,3 +1,6 @@
+import { ArrowDownRight } from "lucide-react"
+import { processSteps } from "../data/processSteps"
+
 const Process = () => {
   return (
     <section
@@ -22,6 +25,43 @@ const Process = () => {
             A clear, collaborative process that turns ambitious
             ideas into thoughtful digital experiences.
           </p>
+        </div>
+
+        {/* Steps */}
+        <div className="border-t border-neutral-300">
+          {processSteps.map((step) => (
+            <article
+              key={step.number}
+              className="group grid grid-cols-[44px_1fr] gap-x-4 gap-y-4 border-b border-neutral-300 py-7 sm:grid-cols-[64px_1fr_1fr_40px] sm:items-center sm:gap-6 sm:py-9"
+            >
+              <span className="pt-2 text-xs text-neutral-400 sm:pt-0">
+                {step.number}
+              </span>
+
+              <h3 className="font-heading text-2xl font-medium tracking-tight transition-transform duration-300 group-hover:translate-x-1 sm:text-3xl lg:text-4xl">
+                {step.title}
+              </h3>
+
+              <div className="col-start-2 sm:col-start-auto">
+                <p className="max-w-md text-sm leading-6 text-neutral-600">
+                  {step.description}
+                </p>
+
+                <p className="mt-3 text-xs uppercase tracking-wider text-neutral-400">
+                  {step.deliverable}
+                </p>
+              </div>
+
+              <div className="col-start-2 flex items-center gap-2 text-sm text-neutral-400 sm:col-start-auto sm:justify-end">
+                <span className="sm:hidden">Step {step.number}</span>
+
+                <ArrowDownRight
+                  size={21}
+                  className="transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1 group-hover:text-neutral-900"
+                />
+              </div>
+            </article>
+          ))}
         </div>
 
       </div>
