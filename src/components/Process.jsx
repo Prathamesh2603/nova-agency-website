@@ -64,6 +64,25 @@ const Process = () => {
           ))}
         </div>
 
+        {/* Footer note */}
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs uppercase tracking-widest text-neutral-500">
+            Clear thinking. Considered design. Quality execution.
+          </p>
+
+          <a 
+            href="#contact"
+            className="group inline-flex w-fit items-center gap-2 text-sm font-medium"
+          >
+            Start a conversation
+
+            <ArrowDownRight 
+              size={17}
+              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:translate-y-1"
+            />
+          </a>
+        </div>
+
       </div>
     </section>
   )
