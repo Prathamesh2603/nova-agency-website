@@ -1,5 +1,6 @@
 import AboutUs from "../components/AboutUs"
 import CTA from "../components/CTA"
+import Footer from "../components/Footer"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Process from "../components/Process"
@@ -18,6 +19,7 @@ const Home = () => {
       <Process />
       <Testimonials />
       <CTA />
+      <Footer />
     </main>
   )
 }
