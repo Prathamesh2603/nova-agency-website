@@ -1,3 +1,9 @@
+import forma from '../assets/images/forma.avif'
+import atelier from '../assets/images/atelier.avif'
+import objects from '../assets/images/objects.avif'
+import mono from '../assets/images/mono.avif'
+
+
 export const projects = [
   {
     id: 1,
@@ -5,8 +11,7 @@ export const projects = [
     category: "Brand Identity · E-commerce",
     year: "2026",
     description: "A fresh perspective on everyday skincare.",
-    image:
-      "https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=1400&q=85",
+    image: forma,
     theme: "bg-[#e9e3d8]",
   },
   {
@@ -15,8 +20,7 @@ export const projects = [
     category: "Digital Experience · Development",
     year: "2026",
     description: "Architecture meets digital storytelling.",
-    image:
-      "https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1400&q=85",
+    image: atelier,
     theme: "bg-[#d9d9d4]",
   },
   {
@@ -25,8 +29,7 @@ export const projects = [
     category: "Art Direction · E-commerce",
     year: "2026",
     description: "A considered home for considered objects.",
-    image:
-      "https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?auto=format&fit=crop&w=1400&q=85",
+    image: objects,
     theme: "bg-[#e4ded5]",
   },
   {
@@ -35,8 +38,7 @@ export const projects = [
     category: "Branding · Web Design",
     year: "2026",
     description: "A new identity for independent culture.",
-    image:
-      "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=85",
+    image: mono,
     theme: "bg-[#deded9]",
   },
 ];
