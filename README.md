@@ -2,6 +2,8 @@
 
 A modern, responsive digital agency website built with React and Tailwind CSS. NOVA features a clean editorial aesthetic, bold typography, project showcases, interactive testimonials, and a strong contact section.
 
+🌐 Live Demo: https://nova-agency-alpha.vercel.app/
+
 ## ✨ Features
 
 - **Responsive design** — layouts for mobile, tablet, and desktop.
