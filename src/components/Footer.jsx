@@ -22,6 +22,36 @@ const Footer = () => {
             </p>
           </div>
 
+          {/* Navigation */}
+          <div>
+            <h3 className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+              Explore
+            </h3>
+
+            <ul className="space-y-3 text-sm text-neutral-300">
+              <li>
+                <a href="#work" className="transition-colors hover:text-lime-400">
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href="#services" className="transition-colors hover:text-lime-400">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="transition-colors hover:text-lime-400">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="transition-colors hover:text-lime-400">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
 
       </div>
