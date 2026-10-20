@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -50,6 +52,29 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="mb-4 text-xs font-medium uppercase tracking-[0.18em] text-neutral-500">
+              Get in touch
+            </h3>
+
+            <a 
+              href="mailto:hello@nova.agency"
+              className="inline-flex items-center gap-2 text-sm text-neutral-300 transition-colors hover:text-lime-400"
+            >
+              hello@nova.agency
+              <ArrowUpRight size={15} />
+            </a>
+
+            <a 
+              href="#contact"
+              className="mt-4 flex w-fit items-center gap-2 text-sm text-neutral-300 transition-colors hover:text-lime-400"
+            >
+              Start a project
+              <ArrowUpRight size={15} />
+            </a>
           </div>
 
         </div>
