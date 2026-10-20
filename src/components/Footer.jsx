@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUp, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -77,6 +77,21 @@ const Footer = () => {
             </a>
           </div>
 
+        </div>
+
+        {/* Bottom bar */}
+        <div className="flex flex-col gap-4 border-t border-neutral-700 pt-6 text-xs text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+          <p>© {currentYear} NOVA Studio. All rights reserved.</p>
+
+          <a 
+            href="#home"
+            className="inline-flex w-fit items-center gap-2 transition-colors hover:text-white"
+          >
+            Back to top
+            <ArrowUp size={14} />
+          </a>
+
+          <p>Designed with intention.</p>
         </div>
 
       </div>

@@ -2,7 +2,9 @@ import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="flex min-h-screen flex-col justify-center px-5 pb-12 pt-28 sm:px-8 sm:pt-32 lg:px-10">
+    <section 
+    id="home"
+    className="flex min-h-screen flex-col justify-center px-5 pb-12 pt-28 sm:px-8 sm:pt-32 lg:px-10">
       <div className="mx-auto w-full max-w-[1600px]">
 
         {/* Eyebrow */}
