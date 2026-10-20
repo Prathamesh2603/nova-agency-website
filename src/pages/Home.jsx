@@ -1,4 +1,5 @@
 import AboutUs from "../components/AboutUs"
+import CTA from "../components/CTA"
 import Hero from "../components/Hero"
 import Navbar from "../components/Navbar"
 import Process from "../components/Process"
@@ -16,6 +17,7 @@ const Home = () => {
       <AboutUs />
       <Process />
       <Testimonials />
+      <CTA />
     </main>
   )
 }
